@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 25% 97%;
+    --foreground: 0 0% 5%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 5%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 5%;
+    --primary: 0 73% 41%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 36 88% 43%;
+    --secondary-foreground: 0 0% 5%;
+    --muted: 30 10% 93%;
+    --muted-foreground: 0 0% 48%;
+    --accent: 36 88% 43%;
+    --accent-foreground: 0 0% 5%;
+    --destructive: 0 73% 41%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 25 12% 87%;
+    --input: 25 12% 87%;
+    --ring: 0 73% 41%;
+    --radius: 0.75rem;
+
+    --sidebar-background: 30 25% 97%;
+    --sidebar-foreground: 0 0% 23%;
+    --sidebar-primary: 0 0% 5%;
+    --sidebar-primary-foreground: 30 25% 97%;
+    --sidebar-accent: 30 10% 93%;
+    --sidebar-accent-foreground: 0 0% 5%;
+    --sidebar-border: 25 12% 87%;
+    --sidebar-ring: 0 73% 41%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-inter;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sora text-jet;
+  }
+}
+
+@layer utilities {
+  .gradient-red-black {
+    background: linear-gradient(135deg, #B71C1C, #0D0D0D);
+  }
+  .gradient-mustard-red {
+    background: linear-gradient(135deg, #D4820A, #B71C1C);
+  }
+  .gradient-black-charcoal {
+    background: linear-gradient(135deg, #0D0D0D, #2A2A2A);
+  }
+  .gradient-red-mustard {
+    background: linear-gradient(135deg, #B71C1C, #D4820A);
+  }
+  .gradient-hero {
+    background: linear-gradient(135deg, #FAF8F5 60%, #F5EEED 100%);
+  }
+  .text-gradient-red {
+    background: linear-gradient(135deg, #B71C1C, #D4820A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .glass-nav {
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.92);
+  }
+  .card-hover {
+    @apply transition-all duration-200;
+  }
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px -8px rgba(183,28,28,0.12);
+  }
+  .img-hover-overlay {
+    @apply relative overflow-hidden;
+  }
+  .img-hover-overlay::after {
+    content: '';
+    @apply absolute inset-0 transition-all duration-300 opacity-0;
+    background: rgba(183,28,28,0.35);
+  }
+  .img-hover-overlay:hover::after {
+    @apply opacity-100;
+  }
+  .img-hover-overlay img {
+    @apply transition-transform duration-300;
+  }
+  .img-hover-overlay:hover img {
+    transform: scale(1.05);
+  }
+}
