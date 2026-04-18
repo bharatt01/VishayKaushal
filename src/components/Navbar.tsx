@@ -57,12 +57,12 @@ const Navbar = () => {
               {l.label}
             </Link>
           ))}
-          {/* <Link
+          <Link
             to="/contact"
             className="bg-crimson text-white font-bold text-sm px-5 py-2.5 rounded-full hover:bg-blood-red transition-all duration-200 hover:scale-[1.03]"
           >
             Get Started
-          </Link> */}
+          </Link>
         </div>
 
         {/* Mobile toggle */}
@@ -98,12 +98,12 @@ const Navbar = () => {
                   {l.label}
                 </Link>
               ))}
-              {/* <Link
+              <Link
                 to="/contact"
                 className="bg-crimson text-white font-bold px-6 py-3 rounded-full hover:bg-blood-red transition-all"
               >
                 Get Started
-              </Link> */}
+              </Link>
             </div>
           </motion.div>
         )}
