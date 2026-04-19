@@ -12,9 +12,11 @@ const stats = [
 ];
 
 const steps = [
-  { icon: Search, title: "Discover Your Interest", desc: "Take our career assessment to find what suits you best.", img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=200&fit=crop" },
-  { icon: ClipboardCheck, title: "Shortlist Options", desc: "Get curated college and program recommendations.", img: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=200&fit=crop" },
   { icon: Compass, title: "Expert Counselling", desc: "One-on-one sessions with experienced education counsellors.", img: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=200&fit=crop" },
+ 
+  { icon: Search, title: "Discover Your Interest", desc: "Take our career assessment to find what suits you best.", img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=200&fit=crop" },
+ 
+  { icon: ClipboardCheck, title: "Shortlist Options", desc: "Get curated college and program recommendations.", img: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=200&fit=crop" },
   { icon: Handshake, title: "Secure Admission", desc: "End-to-end support from application to enrollment.", img: "https://images.unsplash.com/photo-1523050854058-8df90110c476?w=400&h=200&fit=crop" },
 ];
 
@@ -75,7 +77,7 @@ const Index = () => (
   </span>
 
   <h1 className="font-sora font-extrabold text-4xl md:text-5xl lg:text-[64px] leading-[1.1] tracking-[-1px] text-white mb-6">
-    Earn While You Learn —{" "}
+    Earn While You Learn {" "}
     <span className="text-gradient-red">
       Build Your Career Within 15 Days
     </span>
@@ -296,30 +298,7 @@ className="relative -mt-16 z-20 px-4"
     </section>
 
     {/* Exam Highlights */}
-    <section className="py-20 bg-off-white">
-      <div className="container mx-auto px-4">
-        <SectionTitle title="Entrance Exams" subtitle="Prepare for the right exam to unlock your future" />
-        <div className="grid md:grid-cols-3 gap-6 mb-8">
-          {exams.map((e, i) => (
-            <motion.div key={i} {...fadeUp} transition={{ delay: i * 0.1 }} className="bg-white rounded-2xl p-6 border-l-4 border-l-crimson border border-warm-border card-hover">
-              <div className="flex items-center justify-between mb-3">
-                <h3 className="font-sora font-bold text-jet">{e.name}</h3>
-                <span className={`px-2 py-0.5 text-xs font-bold rounded-full text-white ${e.color}`}>{e.difficulty}</span>
-              </div>
-              <p className="text-medium-gray text-sm mb-4">{e.category}</p>
-              <Link to="/entrance-tests" className="text-crimson text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all">
-                Full Details <ArrowRight size={14} />
-              </Link>
-            </motion.div>
-          ))}
-        </div>
-        <div className="text-center">
-          <Link to="/entrance-tests" className="bg-crimson text-white font-bold px-8 py-3 rounded-full hover:bg-blood-red transition-all">
-            View All Exams
-          </Link>
-        </div>
-      </div>
-    </section>
+    
 
     {/* Testimonials */}
     <section className="py-20 bg-warm-gray-bg">

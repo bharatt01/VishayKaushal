@@ -63,16 +63,7 @@ const Footer = () => (
           </div>
 
           <div>
-            <h4 className="font-sora font-bold text-white mb-4">Entrance Exams</h4>
-            <ul className="space-y-2">
-              {examLinks.map((item) => (
-                <li key={item}>
-                  <Link to="/entrance-tests" className="text-sm text-medium-gray hover:text-mustard transition-colors">
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            
           </div>
         </div>
 

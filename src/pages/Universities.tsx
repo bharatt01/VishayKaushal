@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Search, MapPin, Award, BookOpen, DollarSign, Users } from "lucide-react";
 import SectionTitle from "@/components/SectionTitle";
-import EntranceTests from "@/components/EntranceTests";
 
 const stateFilters = ["All", "Delhi", "Mumbai", "Bangalore", "Chennai", "Kolkata", "Hyderabad"];
 const typeFilters = ["All Types", "Government", "Private"];
@@ -182,7 +181,7 @@ const Universities = () => {
         </div>
       </section>
     </div>
-    <EntranceTests />
+ 
     </>
   );
 };
