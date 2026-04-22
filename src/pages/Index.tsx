@@ -22,7 +22,6 @@ const steps = [
 
 const programs = [
   { name: "Engineering", img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop", count: "120+ Colleges" },
-  { name: "Medical", img: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&h=250&fit=crop", count: "80+ Colleges" },
   { name: "Business", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop", count: "95+ Colleges" },
   { name: "Law", img: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=250&fit=crop", count: "60+ Colleges" },
   { name: "Design", img: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&h=250&fit=crop", count: "45+ Colleges" },
@@ -30,17 +29,17 @@ const programs = [
 ];
 
 const universities = [
-  { name: "IIT Delhi", city: "New Delhi", rank: "#1", img: "https://images.unsplash.com/photo-1562774053-701939374585?w=400&h=250&fit=crop" },
-  { name: "IIT Bombay", city: "Mumbai", rank: "#2", img: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=400&h=250&fit=crop" },
-  { name: "AIIMS Delhi", city: "New Delhi", rank: "#1 Medical", img: "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=400&h=250&fit=crop" },
-  { name: "IIM Ahmedabad", city: "Ahmedabad", rank: "#1 MBA", img: "https://images.unsplash.com/photo-1523050854058-8df90110c476?w=400&h=250&fit=crop" },
+  { name: "GLA University", city: "Mathura", rank: "#1", img: "https://images.unsplash.com/photo-1562774053-701939374585?w=400&h=250&fit=crop" },
+  { name: "Amity University", city: "Noida", rank: "#2", img: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=400&h=250&fit=crop" },
+  { name: "Shoolni University", city: "Shimla", rank: "#1 MBA", img: "https://images.unsplash.com/photo-1523050854058-8df90110c476?w=400&h=250&fit=crop" },
+{name:"Chandigarh University", city:"Chandigarh", rank:"#3", img:"https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=250&fit=crop"},
+
 ];
 
 const marqueeUniversities = ["IIT Delhi", "IIT Bombay", "BITS Pilani", "NIT Trichy", "AIIMS", "IIM Ahmedabad", "NLU Delhi", "NIFT", "IISc Bangalore", "VIT Vellore", "SRM Chennai", "Manipal University"];
 
 const exams = [
   { name: "JEE Main", category: "Engineering", difficulty: "Hard", color: "bg-crimson" },
-  { name: "NEET UG", category: "Medical", difficulty: "Hard", color: "bg-crimson" },
   { name: "CUET", category: "General", difficulty: "Medium", color: "bg-mustard" },
 ];
 
@@ -61,68 +60,86 @@ const fadeUp = {
 const Index = () => (
   <div>
     {/* Hero — Fullscreen Video Background */}
-    <section className="relative min-h-[100vh] flex items-center overflow-hidden">
-      <video
-        autoPlay muted loop playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-        poster="https://images.unsplash.com/photo-1523050854058-8df90110c476?w=1600&q=60"
+   {/* Counsellor Video Section - Cinematic Premium */}
+<section className="relative h-[90vh] w-full overflow-hidden">
+
+  {/* VIDEO BACKGROUND */}
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="absolute inset-0 w-full h-full object-cover scale-110"
+  >
+    <source
+      src="/images/herosection.mp4"
+      type="video/mp4"
+    />
+  </video>
+
+  {/* DARK + GRADIENT OVERLAY */}
+  <div className="absolute inset-0 bg-black/70" />
+  <div className="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-transparent" />
+
+  {/* CONTENT */}
+  {/* CONTENT */}
+<div className="relative z-10 h-full flex items-center">
+  <div className="container mx-auto px-6 md:px-10">
+
+    <div className="max-w-2xl flex flex-col gap-6">
+
+      {/* HEADING */}
+      <motion.h2
+        initial={{ opacity: 0, y: 80, scale: 0.95, filter: "blur(12px)" }}
+        whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+        transition={{ duration: 0.9, ease: "easeOut" }}
+        className="font-sora font-extrabold text-4xl md:text-6xl leading-[1.1] text-white"
       >
-        <source src="https://videos.pexels.com/video-files/3196005/3196005-uhd_2560_1440_25fps.mp4" type="video/mp4" />
-      </video>
-      <div className="absolute inset-0 bg-black/60" />
-      <div className="container mx-auto px-4 py-20 relative z-10">
-        <motion.div {...fadeUp} className="max-w-2xl">
-  <span className="inline-block px-4 py-1.5 bg-mustard/20 border border-mustard/40 text-mustard text-sm font-semibold rounded-full mb-6">
-    🎓 Earn While You Learn Program
-  </span>
+        Meet Your{" "}
+        <span className="text-gradient-red">
+          Expert Counsellors
+        </span>
+      </motion.h2>
 
-  <h1 className="font-sora font-extrabold text-4xl md:text-5xl lg:text-[64px] leading-[1.1] tracking-[-1px] text-white mb-6">
-    Earn While You Learn {" "}
-    <span className="text-gradient-red">
-      Build Your Career Within 15 Days
-    </span>
-  </h1>
+      {/* TEXT */}
+      <motion.p
+        initial={{ opacity: 0, y: 60, filter: "blur(10px)" }}
+        whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className="text-white/80 text-lg max-w-lg leading-relaxed"
+      >
+        Our team of experienced education counsellors is ready to guide you through every step of your academic journey.
+      </motion.p>
 
-  <p className="text-white/80 text-lg mb-4 max-w-xl font-medium">
-    Pursue industry-recognized degree programs in association with
-  </p>
+      {/* BUTTONS */}
+      <motion.div
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+        className="flex flex-wrap items-center gap-5 pt-2"
+      >
+        <Link
+          to="/contact"
+          className="bg-crimson text-white font-bold px-8 py-3.5 rounded-full hover:bg-blood-red transition-all hover:scale-[1.05]"
+        >
+          Book a Session
+        </Link>
 
-  <p className="text-mustard font-semibold text-base md:text-lg mb-6">
-    GLA University | Amity University | Galgotias University
-  </p>
+        <button className="flex items-center gap-3 text-white font-semibold group">
+          <div className="w-12 h-12 rounded-full bg-mustard flex items-center justify-center group-hover:scale-110 transition">
+            <Play size={20} className="text-jet ml-1" />
+          </div>
+          Watch Counsellor Intro
+        </button>
+      </motion.div>
 
-  <p className="text-white/70 text-base mb-8 max-w-lg">
-    Begin your professional journey while continuing your academic education.
-    Gain real work experience, develop industry-relevant skills, and earn a
-    monthly income from the early stages of your degree.
-  </p>
-
-  <div className="flex flex-wrap gap-4">
-    <Link
-      to="/apply"
-      className="bg-crimson text-white font-bold px-8 py-3.5 rounded-full hover:bg-blood-red transition-all duration-200 hover:scale-[1.03]"
-    >
-      Apply Now
-    </Link>
-
-    <Link
-      to="/brochure"
-      className="border-2 border-white text-white font-bold px-8 py-3.5 rounded-full hover:bg-white hover:text-crimson transition-all duration-200"
-    >
-      Download Brochure
-    </Link>
-
-    <Link
-      to="/contact"
-      className="bg-mustard text-jet font-bold px-8 py-3.5 rounded-full hover:opacity-90 transition-all duration-200"
-    >
-      Speak to a Career Advisor
-    </Link>
+    </div>
   </div>
-</motion.div>
-      </div>
+</div>
+  {/* BOTTOM FADE (smooth section transition) */}
+  <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-off-white to-transparent" />
 
-         </section>
+</section>
 <motion.div
   {...fadeUp}
   transition={{ delay: 0.4 }}

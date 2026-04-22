@@ -5,10 +5,10 @@ import { MapPin, Phone, Mail, MessageCircle, Clock, ChevronDown, ChevronUp, Send
 import SectionTitle from "@/components/SectionTitle";
 
 const contactInfo = [
-  { icon: MapPin, label: "Address", value: "123, Vishay Kaushal, Aligarh" },
+  { icon: MapPin, label: "Address", value: "GGV Crossing Republic , Ghaziabad" },
   { icon: Phone, label: "Phone", value: "+91-7819991097" },
   { icon: Mail, label: "Email", value: "vkiassistance@gmail.com" },
-  { icon: MessageCircle, label: "WhatsApp", value: "+91-7819991097" },
+  { icon: MessageCircle, label: "WhatsApp", value: "+91-7819991095" },
 ];
 
 const faqs = [
@@ -20,7 +20,7 @@ const faqs = [
   { q: "What is the success rate of VishayKaushal?", a: "We maintain a 98% satisfaction rate with over 5,000 students successfully placed in their preferred institutions." },
   { q: "Do you offer online counselling?", a: "Yes, all our counselling services are available both in-person and online via video call." },
   { q: "How do I book an appointment?", a: "You can fill out the contact form on this page, call us, or send a WhatsApp message. We'll respond within 2 hours." },
-  { q: "What streams do you cover?", a: "We cover Engineering, Medical, Law, Business, Design, Science, Arts, Agriculture, and more." },
+  { q: "What streams do you cover?", a: "We cover Engineering, Law, Business, Design, Science, Arts, Agriculture, and more." },
   { q: "Is there a fee for your services?", a: "We have various packages starting from ₹2,999. The first consultation is always free to help you understand our approach." },
 ];
 
@@ -30,7 +30,7 @@ const officeImages = [
   "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&h=280&fit=crop",
 ];
 
-const streams = ["Engineering", "Medical", "Law", "Business", "Design", "Science", "Arts", "Other"];
+const streams = ["Engineering", "Law", "Business", "Design", "Science", "Arts", "Other"];
 
 const fadeUp = { initial: { opacity: 0, y: 20 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true } };
 

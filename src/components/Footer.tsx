@@ -8,7 +8,7 @@ const quickLinks = [
   { label: "Contact", to: "/contact" },
 ];
 
-const programLinks = ["Engineering", "Medical", "Business", "Law", "Design", "CS/IT"];
+const programLinks = ["Engineering", "Business", "Law", "Design", "CS/IT"];
 const examLinks = ["JEE Main", "NEET", "CLAT", "CAT", "NID DAT", "CUET"];
 
 const socials = ["Twitter", "LinkedIn", "Instagram", "YouTube"];

@@ -13,7 +13,7 @@ const stats = [
 ];
 
 const team = [
-  { name: "Dr. Anita Rao", role: "Founder & Chief Counsellor", bio: "20+ years in education consulting with expertise in engineering and medical admissions.", img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop" },
+  { name: "Dr. Anita Rao", role: "Founder & Chief Counsellor", bio: "20+ years in education consulting with expertise in engineering.", img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop" },
   { name: "Rajesh Kumar", role: "Senior Education Advisor", bio: "Former professor with deep knowledge of university rankings and program quality.", img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop" },
   { name: "Meera Joshi", role: "Career Assessment Specialist", bio: "Certified career coach specializing in aptitude testing and personality mapping.", img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop" },
   { name: "Arjun Nair", role: "Admissions Strategist", bio: "Helped 1000+ students gain admission to top-tier institutions across India.", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop" },

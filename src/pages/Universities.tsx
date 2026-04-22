@@ -8,16 +8,9 @@ const stateFilters = ["All", "Delhi", "Mumbai", "Bangalore", "Chennai", "Kolkata
 const typeFilters = ["All Types", "Government", "Private"];
 
 const universities = [
-  { name: "IIT Delhi", city: "New Delhi", state: "Delhi", type: "Government", rank: 1, courses: 45, fees: "₹2-3 Lakhs/yr", acceptance: "2%", img: "https://images.unsplash.com/photo-1562774053-701939374585?w=400&h=250&fit=crop" },
-  { name: "IIT Bombay", city: "Mumbai", state: "Mumbai", type: "Government", rank: 2, courses: 50, fees: "₹2-3 Lakhs/yr", acceptance: "1.5%", img: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=400&h=250&fit=crop" },
-  { name: "IISc Bangalore", city: "Bangalore", state: "Bangalore", type: "Government", rank: 3, courses: 40, fees: "₹0.5-2 Lakhs/yr", acceptance: "3%", img: "https://images.unsplash.com/photo-1523050854058-8df90110c476?w=400&h=250&fit=crop" },
-  { name: "BITS Pilani", city: "Pilani", state: "Delhi", type: "Private", rank: 8, courses: 30, fees: "₹5-7 Lakhs/yr", acceptance: "5%", img: "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=400&h=250&fit=crop" },
-  { name: "VIT Vellore", city: "Vellore", state: "Chennai", type: "Private", rank: 12, courses: 60, fees: "₹2-5 Lakhs/yr", acceptance: "15%", img: "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=400&h=250&fit=crop" },
-  { name: "SRM Chennai", city: "Chennai", state: "Chennai", type: "Private", rank: 15, courses: 55, fees: "₹2-6 Lakhs/yr", acceptance: "20%", img: "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?w=400&h=250&fit=crop" },
-  { name: "AIIMS Delhi", city: "New Delhi", state: "Delhi", type: "Government", rank: 1, courses: 20, fees: "₹0.1-1 Lakh/yr", acceptance: "0.1%", img: "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=400&h=250&fit=crop" },
-  { name: "NLU Delhi", city: "New Delhi", state: "Delhi", type: "Government", rank: 2, courses: 8, fees: "₹2-3 Lakhs/yr", acceptance: "3%", img: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=250&fit=crop" },
-  { name: "IIM Ahmedabad", city: "Ahmedabad", state: "Mumbai", type: "Government", rank: 1, courses: 12, fees: "₹10-23 Lakhs/yr", acceptance: "1%", img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=250&fit=crop" },
-  { name: "NIFT Delhi", city: "New Delhi", state: "Delhi", type: "Government", rank: 1, courses: 15, fees: "₹1-3 Lakhs/yr", acceptance: "5%", img: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&h=250&fit=crop" },
+  { name: "Shoolni University", city: "Shimla", state: "Mumbai", type: "Government", rank: 1, courses: 12, fees: "₹10-23 Lakhs/yr", acceptance: "1%", img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=250&fit=crop" },
+  { name: "Amity University", city: "Noida", state: "Delhi", type: "Government", rank: 1, courses: 15, fees: "₹1-3 Lakhs/yr", acceptance: "5%", img: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&h=250&fit=crop" },
+  {name: "GLA University", city: "Mathura", state: "Mumbai", type: "Government", rank: 2, courses: 20, fees: "₹2-10 Lakhs/yr", acceptance: "3%", img: "https://images.unsplash.com/photo-1562774053-701939374585?w=400&h=250&fit=crop" },
   { name: "Manipal University", city: "Manipal", state: "Bangalore", type: "Private", rank: 10, courses: 70, fees: "₹3-8 Lakhs/yr", acceptance: "25%", img: "https://images.unsplash.com/photo-1562774053-701939374585?w=400&h=250&fit=crop" },
   { name: "Jadavpur University", city: "Kolkata", state: "Kolkata", type: "Government", rank: 5, courses: 35, fees: "₹0.2-1 Lakh/yr", acceptance: "8%", img: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=400&h=250&fit=crop" },
 ];
