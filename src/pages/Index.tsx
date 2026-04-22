@@ -36,7 +36,7 @@ const universities = [
 
 ];
 
-const marqueeUniversities = ["IIT Delhi", "IIT Bombay", "BITS Pilani", "NIT Trichy", "AIIMS", "IIM Ahmedabad", "NLU Delhi", "NIFT", "IISc Bangalore", "VIT Vellore", "SRM Chennai", "Manipal University"];
+const marqueeUniversities = ["Amity University","GLA University","Shoolni University","Chandigarh University","Manipal University","Lovely Professional University"];
 
 const exams = [
   { name: "JEE Main", category: "Engineering", difficulty: "Hard", color: "bg-crimson" },
@@ -344,24 +344,7 @@ className="relative -mt-16 z-20 px-4"
     </section>
 
     {/* CTA Banner */}
-    <section className="relative py-24 overflow-hidden">
-      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1523050854058-8df90110c476?w=1600&q=60')" }} />
-      <div className="absolute inset-0 bg-black/72" />
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-xl">
-          <h2 className="font-sora font-extrabold text-3xl md:text-4xl text-white mb-4">
-            Ready to Start Your Journey?
-          </h2>
-          <p className="text-white/70 mb-6">Book a free counselling session and get personalized guidance from our experts.</p>
-          <div className="flex flex-col sm:flex-row gap-3">
-            <input type="email" placeholder="Enter your email" className="px-5 py-3 rounded-full bg-white border border-warm-border flex-1 text-sm focus:outline-none focus:ring-2 focus:ring-crimson" />
-            <button className="bg-crimson text-white font-bold px-8 py-3 rounded-full hover:bg-blood-red transition-all">
-              Book Now
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
+ 
   </div>
 );
 

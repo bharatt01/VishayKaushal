@@ -6,7 +6,7 @@ import SectionTitle from "@/components/SectionTitle";
 
 const contactInfo = [
   { icon: MapPin, label: "Address", value: "GGV Crossing Republic , Ghaziabad" },
-  { icon: Phone, label: "Phone", value: "+91-7819991097" },
+  { icon: Phone, label: "Phone", value: "+91-7819991095" },
   { icon: Mail, label: "Email", value: "vkiassistance@gmail.com" },
   { icon: MessageCircle, label: "WhatsApp", value: "+91-7819991095" },
 ];
