@@ -8,7 +8,6 @@ const filters = ["All", "Engineering", "Medical", "Business", "Law", "Design", "
 
 const programImages: Record<string, string> = {
   Engineering: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop",
-  Medical: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&h=250&fit=crop",
   Business: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=250&fit=crop",
   Law: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=250&fit=crop",
   Design: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&h=250&fit=crop",
@@ -19,8 +18,6 @@ const programImages: Record<string, string> = {
 const programs = [
   { name: "Computer Science Engineering", category: "Engineering", duration: "4 Years", colleges: 120, fees: "₹2-15 Lakhs/yr", careers: ["Software Engineer", "Data Scientist", "AI Engineer"] },
   { name: "Mechanical Engineering", category: "Engineering", duration: "4 Years", colleges: 95, fees: "₹1.5-10 Lakhs/yr", careers: ["Design Engineer", "Automotive", "Robotics"] },
-  { name: "MBBS", category: "Medical", duration: "5.5 Years", colleges: 80, fees: "₹5-25 Lakhs/yr", careers: ["Doctor", "Surgeon", "Researcher"] },
-  { name: "BDS", category: "Medical", duration: "5 Years", colleges: 45, fees: "₹3-15 Lakhs/yr", careers: ["Dentist", "Orthodontist", "Oral Surgeon"] },
   { name: "BBA", category: "Business", duration: "3 Years", colleges: 95, fees: "₹1-8 Lakhs/yr", careers: ["Manager", "Consultant", "Entrepreneur"] },
   { name: "MBA", category: "Business", duration: "2 Years", colleges: 110, fees: "₹5-25 Lakhs/yr", careers: ["CEO", "Strategy Lead", "Marketing Head"] },
   { name: "BA LLB", category: "Law", duration: "5 Years", colleges: 60, fees: "₹1-10 Lakhs/yr", careers: ["Advocate", "Legal Advisor", "Judge"] },

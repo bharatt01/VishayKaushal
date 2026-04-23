@@ -15,6 +15,9 @@ import NotFound from "./pages/NotFound";
 import ProgramPage from "./pages/ProgramPage";
 import MargSoftwarePage from "./pages/MargSoftwarePage";
 
+// ✅ IMPORT POPUP
+import PopupForm from "./pages/PopupForm";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -22,14 +25,19 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+
       <BrowserRouter>
+
+        {/* ✅ GLOBAL POPUP (THIS IS THE KEY LINE) */}
+        <PopupForm />
+
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/programs" element={<Programs />} />
             <Route path="/marg-software" element={<MargSoftwarePage />} />
             <Route path="/universities" element={<Universities />} />
-           <Route path="/placement" element={<PlacementPage />} />
+            <Route path="/placement" element={<PlacementPage />} />
             <Route path="/earn-while-learn" element={<ProgramPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
@@ -37,6 +45,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
+
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
