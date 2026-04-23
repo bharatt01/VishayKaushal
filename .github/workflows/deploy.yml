@@ -19,14 +19,14 @@ jobs:
         with:
           node-version: 18
 
-      - name: 📦 Install Dependencies
-        run: npm ci
+      - name: Install dependencies
+        run: npm install
 
-      - name: 📋 Copy .htaccess into dist
-        run: cp .htaccess dist/.htaccess
-
-      - name: 🏗️ Build Vite Project
+      - name: Build project
         run: npm run build
+
+      - name: Copy .htaccess
+        run: cp .htaccess dist/.htaccess
 
       - name: 🧹 Clean old files on server
         uses: appleboy/ssh-action@v1.0.0
